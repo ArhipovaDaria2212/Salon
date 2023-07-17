@@ -1,0 +1,166 @@
+@import url(./style.css);
+
+:root {
+    --main-bg-color: #3C322D;
+    --sacondary-bg-color: #251D1A;
+    --accent-color: #FF6E40;
+    --text-color: #EFE7E2;
+}
+
+/* section 1 */
+
+.craftsmen__inner {
+    background-image: url(./../img/team/craftsmen/01.jpg);
+    min-height: 420px;
+    background-size: cover;
+    padding: 40px 0 0 50px;
+}
+
+.craftsmen__title {
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 110%;
+    color: #FFFFFF;
+    max-width: 707px;
+    padding-bottom: 32px;
+}
+
+.craftsmen__text {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--text-color);
+    max-width: 228px;
+}
+
+/* section 2 */
+
+.devon,
+.ronald,
+.jane {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.devon__top,
+.jane__top,
+.ronald__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: var(--sacondary-bg-color);
+    padding-right: 40px;
+}
+
+.devon__top__column,
+.ronald__top__column,
+.jane__top__column {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.devon__top__column:last-child,
+.ronald__top__column:last-child,
+.jane__top__column:last-child {
+    max-width: 563px;
+}
+
+.devon__top__column--img {}
+
+.devon__top__column--title,
+.ronald__top__column--title,
+.jane__top__column--title {
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    max-width: 250px;
+    text-align: left;
+}
+
+.devon__top__column--text,
+.ronald__top__column--text,
+.jane__top__column--text {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #B7AAA2;
+}
+
+/* section 3 */
+
+.devon__bottom {}
+
+.devon__bottom__row,
+.ronald__bottom__row,
+.jane__bottom__row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.devon__bottom__row--img {}
+
+
+.none {}
+
+.devon__btn,
+.ronald__btn,
+.jane__btn {
+    position: relative;
+    padding: 18.5px 51px;
+}
+
+
+/* .devon__btn::before,
+.ronald__btn::before,
+.jane__btn::before {
+    content: "See all works";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    right: -18.5px;
+    z-index: 10;
+    transition: 0.4s;
+} */
+
+.devon__btn img,
+.ronald__btn img,
+.jane__btn img {
+    padding: 6px 12px 0 0;
+}
+
+/* form */
+
+.form::before {
+    display: none;
+}
+
+.form {
+    padding: 120px 0;
+}
+
+/* .contacts__inner {
+    position: absolute;
+    top: 135px;
+    left: calc((100% - 1180px) / 2);
+    background: #251D1A;
+    padding: 65px 38px 91.5px 57px;
+    border-radius: 5px;
+}
+
+.contacts__card {
+    height: 800px;
+} */
+
+.devon__bottom__hidden,
+.jane__bottom__hidden,
+.ronald__bottom__hidden {
+    display: none;
+}

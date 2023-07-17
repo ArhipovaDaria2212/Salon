@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOL BARBER</title>
+    <link rel="stylesheet" href="./css/styleMasters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="index.php" class="header__logo--img">
+                        <img src="./img/icons/Logo.svg" alt="">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="http://127.0.0.1:5500/index.html#about" class="header__link">About Us</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Our masters</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#portfolio" class="header__link">Portfolio</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="http://127.0.0.1:5500/index.html#testimonials" class="header__link">Testimonials</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./contacts.html" class="header__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__info">
+                    <div class="info__item">
+                        <p class="info__item--text">302 W 50th St,<br> NY, NY 10019</p>
+                        <img src="./img/icons/places.svg" alt="address" class="info__item--img">
+                    </div>
+                    <div class="info__item">
+                        <p class="info__item--text"><span class="info__item--text--phone"> 8 (800) 000-00-00</span><br>
+                            Daily from 9 to 20</p>
+                        <img src="./img/icons/phone.svg" alt="phone" class="info__item--img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="craftsmen">
+            <div class="container">
+                <div class="craftsmen__inner">
+                    <div class="craftsmen__title">Our craftsmen make visitors beautiful and happier</div>
+                    <div class="craftsmen__text">Text placed at the bottom of the title to reveal details</div>
+                </div>
+            </div>
+        </section>
+        <section class="devon" id="portfolio">
+            <div class="container">
+                <div class="devon__top">
+                    <div class="devon__top__column">
+                        <img src="./img/team/devon_lane/01.jpg" alt="" class="devon__top__column--img">
+                        <div class="devon__top__column--title">Devon Lane</div>
+                    </div>
+                    <div class="devon__top__column">
+                        <div class="devon__top__column--text">Description of the master, his education, achievements and merits</div>
+                        <div class="devon__top__column--text">Description of the styles and specializations of the master</div>
+                    </div>
+                </div>
+                <div class="devon__bottom">
+                    <div class="devon__bottom__row">
+                        <img src="./img/team/devon_lane/02.jpg" alt="" class="devon__bottom__row--img">
+                        <img src="./img/team/devon_lane/03.jpg" alt="" class="devon__bottom__row--img">
+                        <img src="./img/team/devon_lane/04.jpg" alt="" class="devon__bottom__row--img">
+                        <img src="./img/team/devon_lane/05.jpg" alt="" class="devon__bottom__row--img">
+                    </div>
+                    <div class="devon__bottom__row">
+                        <img src="./img/team/devon_lane/06.jpg" alt="" class="devon__bottom__row--img">
+                        <img src="./img/team/devon_lane/07.jpg" alt="" class="devon__bottom__row--img">
+                        <img src="./img/team/devon_lane/08.jpg" alt="" class="devon__bottom__row--img">
+                        <img src="./img/team/devon_lane/09.jpg" alt="" class="devon__bottom__row--img">
+                    </div>
+                    <div class="devon__bottom__hidden">
+                        <div class="devon__bottom__row">
+                            <img src="./img/team/devon_lane/02.jpg" alt="" class="devon__bottom__row--img">
+                            <img src="./img/team/devon_lane/03.jpg" alt="" class="devon__bottom__row--img">
+                            <img src="./img/team/devon_lane/04.jpg" alt="" class="devon__bottom__row--img">
+                            <img src="./img/team/devon_lane/05.jpg" alt="" class="devon__bottom__row--img">
+                        </div>
+                        <div class="devon__bottom__row">
+                            <img src="./img/team/devon_lane/06.jpg" alt="" class="devon__bottom__row--img">
+                            <img src="./img/team/devon_lane/07.jpg" alt="" class="devon__bottom__row--img">
+                            <img src="./img/team/devon_lane/08.jpg" alt="" class="devon__bottom__row--img">
+                            <img src="./img/team/devon_lane/09.jpg" alt="" class="devon__bottom__row--img">
+                        </div>
+                    </div>
+                </div>
+                <button class="devon__btn btn" onclick="viewDivDevon()"><img src="./img/team/icon.svg" alt="">
+                    See all works</button>
+            </div>
+        </section>
+        <section class="ronald">
+            <div class="container">
+                <div class="ronald__top">
+                    <div class="ronald__top__column">
+                        <img src="./img/team/ronald_richard/01.jpg" alt="" class="ronald__top__column--img">
+                        <div class="ronald__top__column--title">Ronald Richards</div>
+                    </div>
+                    <div class="ronald__top__column">
+                        <div class="ronald__top__column--text">Description of the master, his education, achievements and merits
+                        </div>
+                        <div class="ronald__top__column--text">Description of the styles and specializations of the master</div>
+                    </div>
+                </div>
+                <div class="ronald__bottom">
+                    <div class="ronald__bottom__row">
+                        <img src="./img/team/ronald_richard/02.jpg" alt="" class="ronald__bottom__row--img">
+                        <img src="./img/team/ronald_richard/03.jpg" alt="" class="ronald__bottom__row--img">
+                        <img src="./img/team/ronald_richard/04.jpg" alt="" class="ronald__bottom__row--img">
+                        <img src="./img/team/ronald_richard/05.jpg" alt="" class="ronald__bottom__row--img">
+                    </div>
+                    <div class="ronald__bottom__row">
+                        <img src="./img/team/ronald_richard/06.jpg" alt="" class="ronald__bottom__row--img">
+                        <img src="./img/team/ronald_richard/07.jpg" alt="" class="ronald__bottom__row--img">
+                        <img src="./img/team/ronald_richard/08.jpg" alt="" class="ronald__bottom__row--img">
+                        <img src="./img/team/ronald_richard/09.jpg" alt="" class="ronald__bottom__row--img">
+                    </div>
+                    <div class="ronald__bottom__hidden">
+                        <div class="ronald__bottom__row">
+                            <img src="./img/team/ronald_richard/02.jpg" alt="" class="ronald__bottom__row--img">
+                            <img src="./img/team/ronald_richard/03.jpg" alt="" class="ronald__bottom__row--img">
+                            <img src="./img/team/ronald_richard/04.jpg" alt="" class="ronald__bottom__row--img">
+                            <img src="./img/team/ronald_richard/05.jpg" alt="" class="ronald__bottom__row--img">
+                        </div>
+                        <div class="ronald__bottom__row">
+                            <img src="./img/team/ronald_richard/06.jpg" alt="" class="ronald__bottom__row--img">
+                            <img src="./img/team/ronald_richard/07.jpg" alt="" class="ronald__bottom__row--img">
+                            <img src="./img/team/ronald_richard/08.jpg" alt="" class="ronald__bottom__row--img">
+                            <img src="./img/team/ronald_richard/09.jpg" alt="" class="ronald__bottom__row--img">
+                        </div>
+                    </div>
+                </div>
+                <button class="ronald__btn btn" onclick="viewDivRonald()"  value="Click" onmousedown="viewDiv()"><img src="./img/team/icon.svg" alt="">
+                    See all works</button>
+            </div>
+        </section>
+        <section class="jane">
+            <div class="container">
+                <div class="jane__top">
+                    <div class="jane__top__column">
+                        <img src="./img/team/jane_cooper/01.jpg" alt="" class="jane__top__column--img">
+                        <div class="jane__top__column--title">Jane Cooper</div>
+                    </div>
+                    <div class="jane__top__column">
+                        <div class="jane__top__column--text">Description of the master, his education, achievements and merits
+                        </div>
+                        <div class="jane__top__column--text">Description of the styles and specializations of the master</div>
+                    </div>
+                </div>
+                <div class="jane__bottom">
+                    <div class="jane__bottom__row">
+                        <img src="./img/team/jane_cooper/02.jpg" alt="" class="jane__bottom__row--img">
+                        <img src="./img/team/jane_cooper/03.jpg" alt="" class="jane__bottom__row--img">
+                        <img src="./img/team/jane_cooper/04.jpg" alt="" class="jane__bottom__row--img">
+                        <img src="./img/team/jane_cooper/05.jpg" alt="" class="jane__bottom__row--img">
+                    </div>
+                    <div class="jane__bottom__row">
+                        <img src="./img/team/jane_cooper/06.jpg" alt="" class="jane__bottom__row--img">
+                        <img src="./img/team/jane_cooper/07.jpg" alt="" class="jane__bottom__row--img">
+                        <img src="./img/team/jane_cooper/08.jpg" alt="" class="jane__bottom__row--img">
+                        <img src="./img/team/jane_cooper/09.jpg" alt="" class="jane__bottom__row--img">
+                    </div>
+                    <div class="jane__bottom__hidden">
+                        <div class="jane__bottom__row">
+                            <img src="./img/team/jane_cooper/02.jpg" alt="" class="jane__bottom__row--img">
+                            <img src="./img/team/jane_cooper/03.jpg" alt="" class="jane__bottom__row--img">
+                            <img src="./img/team/jane_cooper/04.jpg" alt="" class="jane__bottom__row--img">
+                            <img src="./img/team/jane_cooper/05.jpg" alt="" class="jane__bottom__row--img">
+                        </div>
+                        <div class="jane__bottom__row">
+                            <img src="./img/team/jane_cooper/06.jpg" alt="" class="jane__bottom__row--img">
+                            <img src="./img/team/jane_cooper/07.jpg" alt="" class="jane__bottom__row--img">
+                            <img src="./img/team/jane_cooper/08.jpg" alt="" class="jane__bottom__row--img">
+                            <img src="./img/team/jane_cooper/09.jpg" alt="" class="jane__bottom__row--img">
+                        </div>
+                    </div>
+                </div>
+                <button class="jane__btn btn" onclick="viewDivJane()"><img src="./img/team/icon.svg" alt=""><span>See all works</span>
+                    </button>
+            </div>
+        </section>
+        <section class="form" id="form">
+            <div class="container">
+                <div class="form__inner">
+                    <h2 class="form__title">Записаться на прием</h2>
+                    <form class="form__content" method="post" action="submit.php">
+                        <div class="name">
+                            <label class="name_label label" for="name">Имя:</label>
+                            <input class="name_item" autocomplete="off" type="text" id="name" name="name" required placeholder="Гарри">
+                        </div>
+                        <div class="surname">
+                            <label class="surname_label label" for="surname">Отчество:</label>
+                            <input class="surname_item" autocomplete="off" type="text" id="surname" name="surname" placeholder="Поттер" required>
+                        </div>
+                        <div class="phone">
+                            <label class="phone_label label" for="phone">Телефон:</label>
+                            <input class="phone_item" autocomplete="off" type="tel" id="phone" name="phone" placeholder="79883211474" required>
+                        </div>
+                        <div class="data">
+                            <label class="data_label label" for="data">Дата:</label>
+                            <input class="data_item" autocomplete="off" type="data" id="data" name="data" placeholder="00-00-00" required>
+                        </div>
+                        <div class="time">
+                            <label class="time_label label" for="time">Время:</label>
+                            <input class="time_item" autocomplete="off" type="time" id="time" name="time" required>
+                        </div>
+                        <div class="specialist">
+                            <label class="specialist_label label" for="specialist">Специалист:</label>
+                            <select class="specialist_item" autocomplete="off" id="specialist" name="specialist" required>
+                                <option value=""></option>
+                                <?php
+                                  // Подключение к базе данных
+                                  $servername = "localhost";
+                                  $username = "root";
+                                  $password = "";
+                                  $dbname = "salon";
+
+                                  $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+                                  // Проверяем соединение
+                                  if (!$conn) {
+                                    die("Connection failed: " . mysqli_connect_error());
+                                  }
+
+                                  // Выбор данных из таблицы
+                                  $sql = "SELECT id, name, surname FROM staff WHERE on_vacation = 0;";
+                                  $result = mysqli_query($conn, $sql);
+
+                                  // Отображение данных в форме HTML
+
+                                  if (mysqli_num_rows($result) > 0) {
+                                while($row = mysqli_fetch_assoc($result)) {
+                                echo "<option value='" . $row["id"] . "'>" . $row["name"] . " " . $row["surname"] . "</option>";
+                                }
+                                }
+                                ?>
+                            </select>
+                        </div>
+                        <div class="service">
+                            <label class="service_label label" for="service">Услуга:</label>
+                            <select class="service_item" autocomplete="off" id="service" name="service" required>
+                                <option value=""></option>
+                                <?php
+
+
+                                  // Выбор данных из таблицы
+                                  $sql = "SELECT id, service, price FROM services";
+                                  $result = mysqli_query($conn, $sql);
+
+                                  // Отображение данных в форме HTML
+
+                                  if (mysqli_num_rows($result) > 0) {
+                                while($row = mysqli_fetch_assoc($result)) {
+                                echo "<option value='" . $row["id"] . "'>" . $row["service"] . ": " . $row["price"] . "</option>";
+                                }
+                                }
+                                // Закрываем соединение
+                                mysqli_close($conn);
+
+                                ?>
+                            </select>
+                        </div>
+                        <div class="submit">
+                            <input class="submit_item" name="sign_up" type="submit" value="Записаться">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <iframe class="contacts__card"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8547.385211556535!2d-73.99214180885417!3d40.762969989593095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25856f01ffd3d%3A0x3648ae33fc011045!2s302%20W%2050th%20St%2C%20New%20York%2C%20NY%2010019%2C%20USA!5e0!3m2!1sen!2sru!4v1669568775502!5m2!1sen!2sru"
+                height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__title">Contacts</div>
+                    <div class="contacts__content">
+                        <div class="contacts__phone">8 (800) 000-00-00</div>
+                        <div class="content__email">info@sitename.com</div>
+                        <div class="content__address">302 W 50th St, NY, NY 10019</div>
+                        <div class="contacts__time">Daily from 9 to 20</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__text">© All rights reserved</div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/script.js"></script>
+
+</body>
+
+</html>

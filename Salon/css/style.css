@@ -1,0 +1,710 @@
+@import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Montserrat&family=Playfair+Display:wght@700;900&display=swap');
+
+:root {
+    --main-bg-color: #3C322D;
+    --sacondary-bg-color: #251D1A;
+    --accent-color: #FF6E40;
+    --text-color: #EFE7E2;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+.header {
+    padding: 36px 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header__inner,
+.header__list,
+.info__item,
+.header__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 135%;
+    gap: 10px;
+}
+
+.header__info {
+    gap: 42px;
+}
+
+.header__item {
+    position: relative;
+}
+
+.header__item:after {
+    display: block;
+    position: absolute;
+    /* bottom: 0; */
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    content: "";
+    transition: 0.3s ease-out;
+}
+
+.header__item:hover:after {
+    width: 100%;
+}
+
+.info__item {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    gap: 15px;
+    text-align: right;
+}
+
+
+.info__item--text--phone {
+    font-size: 18px;
+    line-height: 152%;
+    color: #fff;
+}
+
+.info__item--img {
+    background: var(--accent-color);
+    padding: 9px;
+    border-radius: 50%;
+}
+
+/* section 1 */
+
+.barbershop__inner {
+    background-image: url(./../img/main/barbershop/barbershop.jpg);
+    background-color: rgba(120, 42, 1, 0.5);
+    background-blend-mode: multiply;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barbershop__info {
+    display: flex;
+
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.barbershop__title {
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 110%;
+    max-width: 671px;
+    color: #fff;
+}
+
+.barbershop__text {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 301px;
+}
+
+.barbershop__text--border {
+    margin: 40px 0 29px 0;
+    
+}
+
+.text--border {
+    display: inline-block;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border: 1px solid var(--text-color);
+    padding: 9.5px 25px;
+}
+
+.barbershop__btn {
+    margin: 0 0 60px 62px;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    padding: 18.5px 51px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 152%;
+    color: #FFFFFF;
+    background: var(--accent-color);
+    transition: 0.4s;
+}
+
+.barbershop__btn--link::before {
+    content: "Book now";
+    position: absolute;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    left: 51px;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+/* .btn::after {
+    content: "";
+    position: absolute;
+    background: #251D1A;
+    height: 8.5px;
+    width: 8.5px;
+    border-radius: 50%;
+    top: calc(50% - 4.25px);
+    left: calc(50% - 4.25px);
+    z-index: -1;
+    transition: 0.4s;
+} */
+
+.barbershop__btn--link::before {
+        
+}
+.btn:hover::after {
+    z-index: 0;
+    transform: scale(4);
+    transition: 0.4s;
+}
+
+
+/* section 2 */
+
+.features {
+    position: relative;
+    background: var(--sacondary-bg-color);
+    padding: 100px 0 125px;
+}
+
+.features::before {
+    content: "";
+    position: absolute;
+    background: var(--sacondary-bg-color);
+    height: 250px;
+    width: 100%;
+    top: -250px;
+    z-index: -1;
+}
+
+.features__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.features__item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.features__img {
+    padding-bottom: 24px;
+}
+
+.features__img--icon {}
+
+.features__title {
+    font-family: 'Fira Sans';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 135%;
+    padding-bottom: 10px;
+}
+
+.features__text {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #B7AAA2;
+    max-width: 244px;
+}
+
+/* section 3 */
+
+.about_us {
+    padding: 120px 0;
+}
+
+.about_us__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_us__content {
+    padding-bottom: 60px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 580px;
+}
+
+.about_us__title {
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    color: #fff;
+    padding-bottom: 12px;
+}
+
+.about_us__text {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.about_us__pictures,
+.about_us__row {
+    display: flex;
+    gap: 20px;
+}
+
+.about_us__pictures {
+    padding-bottom: 60px;
+}
+
+.about_us-01 {
+    padding-bottom: 20px;
+}
+
+.about_us-06 {
+    padding-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    margin: 0 auto;
+}
+
+.buttons__btn--orange {
+    position: relative;
+    margin-right: 30px;
+}
+
+
+.buttons__btn--orange::before {
+    position: absolute;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 152%;
+
+    height: 100%;
+    width: 100%;
+    left: 51px;
+    z-index: 10;
+}
+
+.buttons__btn--orange:hover::before {
+    content: "Our masters and their masterpieces";
+}
+
+.buttons__btn--transparent {
+    display: block;
+    padding: 22px 40px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+/* section 4 */
+
+.testimonials {
+    padding-bottom: 154px;
+}
+
+.testimonials__inner {}
+
+.testimonials__content {
+    text-align: center;
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+.testimonials__title {
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
+.testimonials__text {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    padding: 24px 0 60px;
+}
+
+.testimonials__slider--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 24px;
+    max-width: 277px;
+}
+
+.testimonials__slider--title {
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.testimonials__slider--description {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.testimonials__slider--link {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: var(--accent-color);
+}
+
+/* section 5 */
+
+.price {
+    padding: 120px 0 139px;
+    background: var(--sacondary-bg-color);
+}
+
+.price__content {
+    text-align: center;
+    padding-bottom: 62px;
+}
+
+.price__title {
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    padding-bottom: 24px;
+}
+
+.price__text {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--text-color);
+}
+
+.price__pictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.price__pictures--item {
+    max-width: 280px;
+}
+
+.none {
+    display: none;
+}
+
+.price__pictures--title {
+    padding: 20px 0;
+    font-family: 'Fira Sans';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 133%;
+}
+
+.price__pictures--img {
+    max-height: 186px;
+    overflow: hidden;
+}
+
+.price__pictures--text{
+    position: relative;
+}
+
+.price__pictures--text::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #fff;
+    right: 0;
+    top: 0;
+}
+
+.price__pictures--text--paragraph {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.price__pictures--text div:last-child {
+    padding-bottom: 0;
+}
+
+.price__pictures--text--name {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 173%;
+}
+
+.price__pictures--text--price {
+    padding-right: 14px;
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.price__pictures--text--price--time {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    text-align: right;
+    color: #B7AAA2;
+}
+
+.form {
+    margin: 40px auto;
+}
+
+.form__title {
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    font-size: 48px;
+    text-wrap: none;
+}
+
+.form__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 250px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background: var(--sacondary-bg-color);
+    border-radius: 10px;
+}
+
+.submit_item, input, option, ::placeholder {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: right;
+
+    font-family: 'Fira Sans';
+    font-weight: 400;
+}
+
+::placeholder {
+    color: var(--main-bg-color);
+    text-align: right;
+}
+
+.form__content div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 ;
+    text-transform: uppercase;
+}
+
+.form__content {
+    padding: 0 0 20px 0;
+}
+
+input, select {
+    border-bottom: #312406;
+}
+
+.surname_item option {
+    border-bottom: var(--text-color);
+}
+
+.specialist_item {
+    width: 192px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service_item {
+    width: 192px;
+
+}
+
+.submit {
+    display: inline-block;
+    margin-left: 380px;
+
+    text-align: center;
+    border-radius: 15px;
+}
+
+.submit_item {
+    background-color: var(--accent-color) !important;
+    color: var(--sacondary-bg-color);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family: 'Fira Sans';
+    font-weight: 600;
+}
+
+/* section 6 */
+
+
+.contacts {
+    position: relative;
+}
+
+.contacts__card {
+    width: 100%;
+}
+
+.contacts__inner {
+    position: absolute;
+    top: 60px;
+    left: calc((100% - 1180px) / 2);
+    background: #251D1A;
+    padding: 65px 38px 91.5px 57px ;
+    border-radius: 5px;
+}
+
+.contacts__title {
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    color: #FFFFFF;
+    padding-bottom: 45.5px;
+}
+
+.contacts__content {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 143%;
+    color: #fff;
+    padding-left: 85px;
+}
+
+.contacts__phone,
+.content__email,
+.content__address,
+.contacts__time {
+    position: relative;
+}
+
+.contacts__phone,
+.content__email,
+.content__address {
+    padding-bottom: 47px;
+}
+
+.contacts__phone::before,
+.content__email::before,
+.content__address::before,
+.contacts__time::before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -85px;
+    top: -13.5px;
+    background-size: 22px;
+    
+}
+
+.contacts__phone::before {
+    background-image: url(./../img/icons/phone.svg);
+}
+.content__email::before {
+    background-image: url(./../img/icons/email.svg);
+}
+.content__address::before {
+    background-image: url(./../img/icons/places.svg);
+}
+.contacts__time::before {
+    background-image: url(./../img/icons/clock.svg);
+}
+
+/* footer */
+
+.footer {
+    background: var(--sacondary-bg-color);
+    padding: 56px 0;
+    margin: 0 auto;
+}
+
+.footer__text {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}

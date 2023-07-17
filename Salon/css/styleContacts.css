@@ -1,0 +1,26 @@
+@import url(./style.css);
+
+.contacts__inner {
+    position: absolute;
+    top: 135px;
+    left: calc((100% - 1180px) / 2);
+    background: #251D1A;
+    padding: 65px 38px 91.5px 57px;
+    border-radius: 5px;
+}
+
+.contacts__card {
+    height: 800px;
+}
+
+.form::before {
+    display: none;
+}
+.form__inner {
+    position: absolute;
+    top: -30px;
+}
+.form {
+    padding-bottom: 0;
+    min-height: 435px;
+}
